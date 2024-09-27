@@ -1,0 +1,146 @@
+:root {
+  /* ASU Primary Colors */
+  --asu-maroon: #8C1D40;
+  --asu-gold: #FFC627;
+  --asu-rich-black: #000000;
+  --asu-white: #FFFFFF;
+
+  /* ASU Secondary Colors */
+  --asu-green: #78BE20;
+  --asu-blue: #00A3E0;
+  --asu-orange: #FF7F32;
+  --asu-gray: #747474;
+  --asu-copper: #AF674B;
+  --asu-turquoise: #4AB7C4;
+  --asu-pink: #E74973;
+
+  --dark-tint: rgba(0,0,0,0.2);
+}
+
+/* Basic reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+/* Style the sidenav */
+.sidenav {
+  height: 100vh; /* Full-height: will cover the entire screen */
+  width: 250px; /* Set the width of the sidenav */
+  position: fixed; /* Fixed sidebar */
+  top: 0;
+  left: 0;
+  background-color: var(--asu-maroon); /* Black background color */
+  padding-top: 20px;
+}
+
+/* Style the sidenav links */
+.sidenav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--asu-white); /* Gray text color */
+  display: block;
+  font-weight: normal;
+}
+
+/* Style the links on mouse hover */
+.sidenav a:hover {
+  font-weight: bold;
+  background-color: var(--dark-tint);
+}
+
+/* Style the main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 20px; /* Some padding */
+}
+
+.headshot-img, .student-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.headshot-caption-name {
+  text-align: center;
+  color: var(--asu-white);
+  margin: 10px;
+  font-size: 18px;
+}
+
+.headshot-caption {
+  text-align: center;
+  color: var(--asu-white);
+  margin: 10px;
+  font-size: 12px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.student-img-small {
+  width: 120px; /* Adjust the size as needed */
+  height: 120px; /* Adjust the size as needed */
+  margin-right: 20px;
+}
+
+.bio {
+  flex-grow: 1;
+}
+
+.bio h4 {
+  margin: 0;
+}
+
+.bio p {
+  margin: 5px 0 0 0;
+}
+
+.list {
+  margin-left: 30px;
+}
+
+.class-code {
+  display: inline-block;
+  width: 70px;
+}
+
+.class-title {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.research-title {
+  margin-bottom: 10px;
+}
+
+.research-date {
+  margin-bottom: 10px;
+}
+
+.research-description {
+  margin-bottom: 20px;
+}
+
+a {
+  color: var(--asu-maroon);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--asu-gold);
+  font-weight: bold;
+  text-decoration: none;
+}
